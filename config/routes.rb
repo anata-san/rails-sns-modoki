@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
   root 'pages#index'
-  get 'pages/show'
+  get '/home', to: 'pages#show'
+
+  devise_for :users
+  devise_scope :user do
+    get '/users', to: 'devise/registrations#new'
+  end
 
   # Admin Page
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

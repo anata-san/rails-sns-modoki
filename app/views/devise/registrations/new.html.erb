@@ -16,6 +16,12 @@ body {
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
       </div>
 
+      <div class="form-group form-group-lg field border mb-3">
+        <%= f.label :name, "名前" %><br />
+        <%= f.text_field :name, autocomplete: "名前", class: "form-control"  %>
+      </div>
+
+
       <div class="form-group field border mb-3">
         <%= f.label :password, "パスワード" %>
         <% if @minimum_password_length %>
@@ -30,7 +36,7 @@ body {
       </div>
 
       <div class="actions mb-3">
-        <%= f.submit "Sign up", class: "btn btn-primary w-100" %>
+        <%= f.submit "Sign up", class: "btn btn-primary w-100 rounded-pill" %>
       </div>
     <% end %>
 

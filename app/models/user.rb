@@ -4,4 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :confirmable, :timeoutable, :omniauthable, omniauth_providers:[:twitter]
+
+  validates :name, presence: true
 end
