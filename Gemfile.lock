@@ -268,11 +268,12 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
-  devise
+  devise (= 4.7.3)
   jbuilder (~> 2.7)
   listen (~> 3.2)
   omniauth (= 1.9.1)
-  omniauth-twitter
+  omniauth-oauth (= 1.2.0)
+  omniauth-twitter (= 1.4.0)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.5)
   rails_admin

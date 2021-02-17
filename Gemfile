@@ -16,9 +16,10 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # gem 'image_processing', '~> 1.2'
 
 # Auth
-gem 'devise'
+gem 'devise', '4.7.3'
 gem 'omniauth', '1.9.1'
-gem 'omniauth-twitter'
+gem 'omniauth-oauth', '1.2.0'
+gem 'omniauth-twitter', '1.4.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
